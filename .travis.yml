@@ -27,3 +27,7 @@ script:
 
 after_success:
   - ./gradlew coveralls
+
+addons:
+  artifacts:
+    s3_region: "us-west-2”
